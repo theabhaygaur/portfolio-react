@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500,600,700,800,900&display=swap");
+
+.home {
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: #000000e0;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.about {
+  width: 100%;
+  /* height: 500px; */
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bg.png);
+  background-size: cover;
+
+  image-rendering: optimizeQuality;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.about h2 {
+  font-size: 90px;
+  color: #ffffff;
+  height: 80px;
+  opacity: 10%;
+  padding: 0px 10px;
+  font-family: "Poppins", sans-serif;
+  transition-duration: 500ms;
+  font-weight: 500;
+}
+
+.about h2:hover {
+  opacity: 100%;
+  text-shadow: -5px -4px 10px rgba(0, 238, 255, 0);
+}
+
+.about .prompt {
+  margin: 30px;
+  opacity: 10%;
+  width: 30%;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  transition-duration: 500ms;
+  font-weight: 500;
+}
+
+.about .prompt:hover {
+  opacity: 100%;
+}
+.prompt svg {
+  font-size: 30px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0),
+    rgb(0, 27, 87)
+  );
+}
+
+.skills h1 {
+  color: #000000e0;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  color: #000000e0;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  transition-duration: 500ms;
+}
+
+.item h2:hover {
+  color: #00cafd;
+}
+
+.skills .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  width: 60%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+.name {
+  color: #00cafd;
+}
+
+.web-dev-text {
+  color: #00cafd;
+}
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 30px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .about {
+    background-position: center;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}
